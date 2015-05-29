@@ -1,0 +1,10 @@
+// List Styles
+
+ol {
+	counter-reset: item;
+
+	li:before {
+		content: counters(item, ".") " "; 
+		counter-increment: item;
+	}
+}
